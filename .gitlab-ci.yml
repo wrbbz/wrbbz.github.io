@@ -8,7 +8,7 @@ cv:
     only:
         - master
     script:
-        - make clean
+        - make clean all
     artifacts:
         name: cv
         paths:
