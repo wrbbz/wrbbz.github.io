@@ -1,0 +1,15 @@
+image: tianon/latex
+
+stages:
+    - build
+    
+cv:
+    stage: build
+    only:
+        - master
+    script:
+        - make clean
+    artifacts:
+        name: cv
+        paths:
+            - cv.pdf
