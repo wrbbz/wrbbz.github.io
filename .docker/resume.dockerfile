@@ -20,16 +20,3 @@ RUN dpkg -i pandoc-2.2.1-1-amd64.deb  && rm pandoc-*.deb
 RUN apt-get remove -y wget && \ 
     apt-get autoclean && \
     apt-get clean
-
-ENV APP_NAME=resume
-
-# before switching to user we need to set permission properly
-# copy all files, except the ignored files from .dockerignore
-COPY . $HOME/$APP_NAME/
-COPY ./Makefile $HOME/$APP_NAME/
-RUN chown -R app:app $HOME/*
-
-USER app
-WORKDIR $HOME/$APP_NAME
-
-RUN make clean
