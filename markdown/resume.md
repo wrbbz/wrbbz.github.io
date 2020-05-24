@@ -1,100 +1,149 @@
-Johnny Coder
+Arsenii Zorin
 ============
 
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+>  DevOps Engineer with 3+ years of hands-on experience.
+> Trying to automate as many steps of the Software Development pipeline as possible.
+> Believe that DevOps is more than tools nevertheless tools are crucial.\
+> <zorinarseny@yandex.ru> • +7 (921)577 33 26 • 24 years old\
+> St.-Petersburg, Russia\
+> [GitLab](https://gitlab.com/rabbitaz) • [GitHub](https://github.com/wrabbitaz)\
 
 ----
 
 Education
 ---------
 
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
+2019-2023 (expected)
+:   **PhD, Mathematics and software of computers, network and complexes**; [Peter
+the Great St.Petersburg Polytechnic University](https://www.spbstu.ru/) (St. Petersburg)
 
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
+    *Thesis title: Semantic software clones detection in source code*
 
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
+2016-2018
+:   **MSc, Technology Development of Software**; [Peter the Great St.Petersburg
+Polytechnic University](https://www.spbstu.ru/) (St. Petersburg)
 
-    *Minor: Awesomeology*
+    *Thesis title: Artificial neural networks usage for software clones 
+	detection in source code*
+
+2012-2016
+:   **BSc, Applied Mathematics and Computer Science**; [Saint-Petersburg State University of Architecture and Civil Engineering](https://www.spbgasu.ru/) (St.-Petersburg)
+
 
 Experience
 ----------
 
-**Your Most Recent Work Experience:**
+**[Peter the Great St. Petersburg Polytechnic University](https://spbpu.com) [Feb 2018 - Current]:**
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+* On-premises deployment and maintenance of Gitlab (Omnibus, Helm)
+* On-premises deployment and maintenance of Sonatype Nexus (Helm)
+* On-premises deployment and maintenance of Zulip (Helm)
+* On-premises deployment and maintenance of HashiCorp Vault (Helm)
+* Routine automation with Gitlab CI/CD, self-written stuff
+* Fleet of Gitlab Runners of all sorts (Docker on Linux, Windows, MacOS, Kubernetes)
+* Creation of CI/CD pipeline for tens of projects
+	* written in Java, C, C++, Rust, Go, JS, HTML, CSS (preprocessed)
+	* deployed as binaries, datasets(ML stuff), packages(tar.xz, deb, rpm), 
+	running services (deployed to production/development)
+* Creation of Helm packages for tens of projects
+* Docker-compose for local development deployments (even with unix socket connections)
+* Minikube, kind for local development deployments
+* NGINX as a reverse proxy for every on-premises web service
+* Prometheus as monitoring tool
+* EFK and Loki as logging tool
+* nspawn as a tool for containerizing some services
 
-* First item
+**[Scientific Laboratory "Program Verification and Analysis"](https://research.jetbrains.org/ru/groups/pvalab) [Jan 2017 - Jun 2018]**
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
-
-**That Other Job You Had**
-
-Also with a short description.
+* Development of an intellectual method for software clone detection in source 
+code
+* Software development for implementation of the proposed method
+* Testing of developed software on real projects and data sets
 
 Technical Experience
 --------------------
 
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
+Not DevOps activities
+:	* PostgreSQL as preferred DB applications (11, 10, 9 versions are currently in
+	use)
+	* Network Management:
+		* Linux routers/boxes
+			* IPTables
+			* uwf (user boxes)
+			* dhcpd
+			* netplan
+			* NetwrokManager
+		* Cisco switches
+		* HP AP management
+		* VLANS
+		* WireGuard tunnels
+		* Restricting ssh jumpboxes
+	* Racks, servers, UPS and storage installation
+	* Cables management
 
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
+Development activities
+:	Common frameworks/libs:
 
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
+	* darknet
+	* OpenCV
+	* TensorFlow
+	* Keras
+	* DL4J
+	* Spring
+	
+	Languages:
+	
+	* Rust (supportive tooling, video processing)
+	* C (kernel modules)
+	* C++ (embedded software, ML, video processing, native Linux GUI)
+	* Java (ML, Master thesis)
+	* Python (ML, scripting, Master thesis)
 
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
+PolyPhone
+:   Project started during course work in university but far to passionate to be
+restricted by it.
+Mission was to create a phone from detailed not targeted for a phone.
+This way we were not able to use some android ready Chinese board.
+Due to a negative amount of available time, the project died a horrible death.
 
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
+	Things involved:
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
+    * RaspberryPi zero (and 3 as a devstack)
+	* SIM808
+	* Some Chinese screen, battery, charge controller
+	* Power and buttons controller (Digispark)
+	* 3D printed body and buttons
+	* Badly wired motherboard (not even printed)
+	* Social media accounts ([Instagram](https://instagram.com/phone3141592)
+	and [Twitter](https://twitter.com/PhonePi))
+	* Archlinux ARM
+	* Custom Window Manager
+	* Custom Boot Animation (Plymouth)
+	* Custom Suite of Phone applications (Qt and oFono)
+	* Hosted Archlinux repository to push updates
 
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+Open Source contribution
+:   * [Frost](https://github.com/dkanada/frost) Android Icon pack. Just for fun
+	* [zmNinja](https://github.com/wrabbitaz/zmNinja/tree/double_def_fix) cross platform app for ZoneMinder
+	* [minikube](https://github.com/kubernetes/minikube) Local Kubernetes
+	* [Kaniko](https://github.com/GoogleContainerTools/kaniko) Allows to build container images wo docker service
 
-[ref]: https://github.com/githubuser/superlongprojectname
-
-Extra Section, Call it Whatever You Want
+About me
 ----------------------------------------
 
 * Human Languages:
 
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
+     * Russian (native speaker)
+     * English (Advanced C1)
 
-* Random tidbit
+* 4+ years active Linux user.
+* «Works on my machine» is worst excuse
+* FOSS lover
 
-* Other sort of impressive-sounding thing you did
-
-----
-
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+Topics to invest in
+:	* Gitlab Auto DevOps
+	* GitHub Actions
+	* Knative
+	* Terraform
