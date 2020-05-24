@@ -1,0 +1,51 @@
+stages:
+  - image
+  - resume
+
+kaniko:
+  stage: image
+  rules:
+    - changes:
+      - .docker/resume.dockerfile
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  script:
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/.docker/resume.dockerfile --destination $CI_REGISTRY_IMAGE/resume_builder:latest
+
+pdf:
+  stage: resume
+  image: $CI_REGISTRY_IMAGE/resume_builder:latest
+  script:
+    - make pdf
+  artifacts:
+    paths:
+      - 'output/resume.pdf'
+
+html:
+  stage: resume
+  image: $CI_REGISTRY_IMAGE/resume_builder:latest
+  script:
+    - make html
+  artifacts:
+    paths:
+      - 'output/resume.html'
+
+docx:
+  stage: resume
+  image: $CI_REGISTRY_IMAGE/resume_builder:latest
+  script:
+    - make docx
+  artifacts:
+    paths:
+      - 'output/resume.docx'
+
+rtf:
+  stage: resume
+  image: $CI_REGISTRY_IMAGE/resume_builder:latest
+  script:
+    - make rtf
+  artifacts:
+    paths:
+      - 'output/resume.rtf'
