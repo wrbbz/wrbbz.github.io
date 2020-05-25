@@ -54,10 +54,10 @@ rtf:
       
 pages:
   stage: deploy
+  image: alpine:latest
   script:
-    - mkdir .public
-    - cp -r output/resume.html .public
-    - mv .public public
+    - mkdir public
+    - mv output/resume.html public/
   artifacts:
     paths:
       - public
