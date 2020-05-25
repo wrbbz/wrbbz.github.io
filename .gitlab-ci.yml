@@ -1,6 +1,7 @@
 stages:
   - image
   - resume
+  - deploy
 
 kaniko:
   stage: image
@@ -28,12 +29,9 @@ html:
   image: $CI_REGISTRY_IMAGE/resume_builder:latest
   script:
     - make html
-    - mkdir .public
-    - cp -r output/resume.html .public
-    - mv .public public
   artifacts:
     paths:
-      - public
+      - 'output/resume.html'
 
 docx:
   stage: resume
@@ -52,3 +50,17 @@ rtf:
   artifacts:
     paths:
       - 'output/resume.rtf'
+      
+      
+pages:
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp -r output/resume.html .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
