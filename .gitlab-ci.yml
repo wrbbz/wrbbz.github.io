@@ -1,6 +1,7 @@
 stages:
   - image
   - resume
+  - deploy
 
 kaniko:
   stage: image
@@ -49,3 +50,17 @@ rtf:
   artifacts:
     paths:
       - 'output/resume.rtf'
+      
+      
+pages:
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp -r output/resume.html .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
