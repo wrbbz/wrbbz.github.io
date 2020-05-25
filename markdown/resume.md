@@ -146,7 +146,7 @@ Publications
 :	* Arsenii Zorin, & Nikolay Abramov. Disguised Face Detection. Springer 
 	Singapore, 2019
 	* A. Zorin and V.Itsykson Recurrent Neural Network for Code Clone Detection.
-	SEIM-2018, Санкт-Петербург, 2018
+	SEIM-2018, St.-Petersburg, 2018
 
 Topics to invest in
 :	* Gitlab Auto DevOps
