@@ -54,6 +54,7 @@ Experience
 * Prometheus as monitoring tool
 * EFK and Loki as logging tool
 * nspawn as a tool for containerizing some services
+* CMake project cross-platform build
 
 **[Scientific Laboratory "Program Verification and Analysis"](https://research.jetbrains.org/ru/groups/pvalab) [Jan 2017 - Jun 2018]**
 
@@ -133,14 +134,19 @@ Open Source contribution
 About me
 ----------------------------------------
 
-* Human Languages:
+* 4+ years active Linux user.
+* «Works on my machine» is the worst excuse
+* FOSS lover
 
-     * Russian (native speaker)
+Human Languages
+:	 * Russian (native speaker)
      * English (Advanced C1)
 
-* 4+ years active Linux user.
-* «Works on my machine» is worst excuse
-* FOSS lover
+Publications
+:	* Arsenii Zorin, & Nikolay Abramov. Disguised Face Detection. Springer 
+	Singapore, 2019
+	* A. Zorin and V.Itsykson Recurrent Neural Network for Code Clone Detection.
+	SEIM-2018, Санкт-Петербург, 2018
 
 Topics to invest in
 :	* Gitlab Auto DevOps
