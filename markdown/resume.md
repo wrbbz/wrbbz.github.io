@@ -44,12 +44,19 @@ Experience
 * Routine automation with Gitlab CI/CD, self-written stuff
 * Fleet of Gitlab Runners of all sorts (Docker on Linux, Windows, MacOS, Kubernetes)
 * Creation of CI/CD pipeline for tens of projects
-	* written in Java, C, C++, Rust, Go, JS, HTML, CSS (preprocessed)
-	* deployed as binaries, datasets(ML stuff), packages(tar.xz, deb, rpm), 
+	* Desktop and Web projects:
+		* Java, C, C++, Rust, Go, JS, HTML, CSS
+	* Mobile projects:
+		* Swift, Flutter
+	* deployed as binaries, datasets(ML stuff), packages(tar.xz, deb, rpm, Helm), 
 	running services (deployed to production/development)
 * Creation of Helm packages for tens of projects
+* Creation of Buildroot package
+* Buildroot for embedded Linux systems generation
 * Docker-compose for local development deployments (even with unix socket connections)
 * Minikube, kind for local development deployments
+* Nexus as package storage
+* HashiCorp Vault as secret storage
 * NGINX as a reverse proxy for every on-premises web service
 * Prometheus as monitoring tool
 * EFK and Loki as logging tool
@@ -62,6 +69,7 @@ Experience
 code
 * Software development for implementation of the proposed method
 * Testing of developed software on real projects and data sets
+* Using DGX-1 for computation
 
 Technical Experience
 --------------------
@@ -103,7 +111,7 @@ Development activities
 	* Python (ML, scripting, Master thesis)
 
 PolyPhone
-:   Project started during course work in university but far to passionate to be
+:   Project started during term paper in university but far to passionate to be
 restricted by it.
 Mission was to create a phone from detailed not targeted for a phone.
 This way we were not able to use some android ready Chinese board.
