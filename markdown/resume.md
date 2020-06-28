@@ -6,7 +6,7 @@ Arsenii Zorin
 >  DevOps Engineer with 3+ years of hands-on experience.
 > Trying to automate as many steps of the Software Development pipeline as possible.
 > Believe that DevOps is more than tools nevertheless tools are crucial.\
-> <zorinarseny@yandex.ru> • +7 (921)577 33 26 • 24 years old\
+> <zorinarseny@yandex.ru> • +7 (921)577 33 26 • 25 years old\
 > St.-Petersburg, Russia\
 > [GitLab](https://gitlab.com/rabbitaz) • [GitHub](https://github.com/wrabbitaz)\
 
