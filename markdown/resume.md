@@ -160,5 +160,6 @@ Publications
 Topics to invest in
 :	* Gitlab Auto DevOps
 	* GitHub Actions
+	* AWS
 	* Knative
 	* Terraform
