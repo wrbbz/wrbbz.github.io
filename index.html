@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #665C54;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  /* h1:hover { */
+  /*     background-color: #757575; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #CC241D;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #FB4934;
+  }
+  /* h2:hover { */
+  /*     background-color: #397249; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      font-weight: bold;
+  }
+  dd {
+      margin-left: 17%;
+      margin-bottom:7px;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #CC241D;
+  }
+  a:hover, a:active {
+      background-color: #CC241D;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+
+  /* Horizontal separators */
+  hr {
+      color: #FB4934;
+  }
+
+  table {
+      width: 100%;
+  }
+  </style>
+</head>
+<body>
+<h1 id="arsenii-zorin">Arsenii Zorin</h1>
+<hr />
+<blockquote>
+<p>DevOps Engineer with 3+ years of hands-on experience. Trying to automate as many steps of the Software Development pipeline as possible. Believe that DevOps is more than tools nevertheless tools are crucial.<br />
+<a href="mailto:zorinarseny@yandex.ru" class="email">zorinarseny@yandex.ru</a> • +7 (921)577 33 26 • 25 years old<br />
+St.-Petersburg, Russia<br />
+<a href="https://gitlab.com/rabbitaz" target="_blank">GitLab</a> • <a href="https://github.com/wrabbitaz" target="_blank">GitHub</a><br />
+<a href="https://gitlab.com/rabbitaz/cv/-/jobs/artifacts/master/download?job=pdf" target="_blank">PDF version</a></p>
+</blockquote>
+<hr />
+<h2 id="education">Education</h2>
+<dl>
+<dt>2019-2023 (expected)</dt>
+<dd><p><strong>PhD, Mathematics and software of computers, network and complexes</strong>; <a href="https://www.spbstu.ru/" target="_blank">Peter the Great St.Petersburg Polytechnic University</a> (St. Petersburg)</p>
+<p><em>Thesis title: Semantic software clones detection in source code</em></p>
+</dd>
+<dt>2016-2018</dt>
+<dd><p><strong>MSc, Technology Development of Software</strong>; <a href="https://www.spbstu.ru/" target="_blank">Peter the Great St.Petersburg Polytechnic University</a> (St. Petersburg)</p>
+<p><em>Thesis title: Artificial neural networks usage for software clones detection in source code</em></p>
+</dd>
+<dt>2012-2016</dt>
+<dd><strong>BSc, Applied Mathematics and Computer Science</strong>; <a href="https://www.spbgasu.ru/" target="_blank">Saint-Petersburg State University of Architecture and Civil Engineering</a> (St.-Petersburg)
+</dd>
+</dl>
+<h2 id="experience">Experience</h2>
+<p><strong><a href="https://spbpu.com" target="_blank">Peter the Great St. Petersburg Polytechnic University</a> [Feb 2018 - Current]:</strong></p>
+<ul>
+<li>On-premises deployment and maintenance of Gitlab (Omnibus, Helm)</li>
+<li>On-premises deployment and maintenance of Sonatype Nexus (Helm)</li>
+<li>On-premises deployment and maintenance of Zulip (Helm)</li>
+<li>On-premises deployment and maintenance of HashiCorp Vault (Helm)</li>
+<li>Routine automation with Gitlab CI/CD, self-written stuff</li>
+<li>Fleet of Gitlab Runners of all sorts (Docker on Linux, Windows, MacOS, Kubernetes)</li>
+<li>Creation of CI/CD pipeline for tens of projects
+<ul>
+<li>Desktop and Web projects:
+<ul>
+<li>Java, C, C++, Rust, Go, JS, HTML, CSS</li>
+</ul></li>
+<li>Mobile projects:
+<ul>
+<li>Swift, Flutter</li>
+</ul></li>
+<li>deployed as binaries, datasets(ML stuff), packages(tar.xz, deb, rpm, Helm), running services (deployed to production/development)</li>
+</ul></li>
+<li>Creation of Helm packages for tens of projects</li>
+<li>Creation of Buildroot package</li>
+<li>Buildroot for embedded Linux systems generation</li>
+<li>Docker-compose for local development deployments (even with unix socket connections)</li>
+<li>Minikube, kind for local development deployments</li>
+<li>Nexus as package storage</li>
+<li>HashiCorp Vault as secret storage</li>
+<li>NGINX as a reverse proxy for every on-premises web service</li>
+<li>Prometheus as monitoring tool</li>
+<li>EFK and Loki as logging tool</li>
+<li>nspawn as a tool for containerizing some services</li>
+<li>CMake project cross-platform build</li>
+</ul>
+<p><strong><a href="https://research.jetbrains.org/ru/groups/pvalab" target="_blank">Scientific Laboratory “Program Verification and Analysis”</a> [Jan 2017 - Jun 2018]</strong></p>
+<ul>
+<li>Development of an intellectual method for software clone detection in source code</li>
+<li>Software development for implementation of the proposed method</li>
+<li>Testing of developed software on real projects and data sets</li>
+<li>Using DGX-1 for computation</li>
+</ul>
+<h2 id="technical-experience">Technical Experience</h2>
+<dl>
+<dt>Not DevOps activities</dt>
+<dd><ul>
+<li>PostgreSQL as preferred DB applications (11, 10, 9 versions are currently in use)</li>
+<li>Network Management:
+<ul>
+<li>Linux routers/boxes
+<ul>
+<li>IPTables</li>
+<li>uwf (user boxes)</li>
+<li>dhcpd</li>
+<li>netplan</li>
+<li>NetwrokManager</li>
+</ul></li>
+<li>Cisco switches</li>
+<li>HP AP management</li>
+<li>VLANS</li>
+<li>WireGuard tunnels</li>
+<li>Restricting ssh jumpboxes</li>
+</ul></li>
+<li>Racks, servers, UPS and storage installation</li>
+<li>Cables management</li>
+</ul>
+</dd>
+<dt>Development activities</dt>
+<dd><p>Common frameworks/libs:</p>
+<ul>
+<li>darknet</li>
+<li>OpenCV</li>
+<li>TensorFlow</li>
+<li>Keras</li>
+<li>DL4J</li>
+<li>Spring</li>
+</ul>
+<p>Languages:</p>
+<ul>
+<li>Rust (supportive tooling, video processing)</li>
+<li>C (kernel modules)</li>
+<li>C++ (embedded software, ML, video processing, native Linux GUI)</li>
+<li>Java (ML, Master thesis)</li>
+<li>Python (ML, scripting, Master thesis)</li>
+</ul>
+</dd>
+<dt>PolyPhone</dt>
+<dd><p>Project started during term paper in university but far to passionate to be restricted by it. Mission was to create a phone from detailed not targeted for a phone. This way we were not able to use some android ready Chinese board. Due to a negative amount of available time, the project died a horrible death.</p>
+<p>Things involved:</p>
+<ul>
+<li>RaspberryPi zero (and 3 as a devstack)</li>
+<li>SIM808</li>
+<li>Some Chinese screen, battery, charge controller</li>
+<li>Power and buttons controller (Digispark)</li>
+<li>3D printed body and buttons</li>
+<li>Badly wired motherboard (not even printed)</li>
+<li>Social media accounts (<a href="https://instagram.com/phone3141592" target="_blank">Instagram</a> and <a href="https://twitter.com/PhonePi" target="_blank">Twitter</a>)</li>
+<li>Archlinux ARM</li>
+<li>Custom Window Manager</li>
+<li>Custom Boot Animation (Plymouth)</li>
+<li>Custom Suite of Phone applications (Qt and oFono)</li>
+<li>Hosted Archlinux repository to push updates</li>
+</ul>
+</dd>
+<dt>Open Source contribution</dt>
+<dd><ul>
+<li><a href="https://github.com/dkanada/frost" target="_blank">Frost</a> Android Icon pack. Just for fun</li>
+<li><a href="https://github.com/wrabbitaz/zmNinja/tree/double_def_fix" target="_blank">zmNinja</a> cross platform app for ZoneMinder</li>
+<li><a href="https://github.com/kubernetes/minikube" target="_blank">minikube</a> Local Kubernetes</li>
+<li><a href="https://github.com/GoogleContainerTools/kaniko" target="_blank">Kaniko</a> Allows to build container images wo docker service</li>
+</ul>
+</dd>
+</dl>
+<h2 id="about-me">About me</h2>
+<ul>
+<li>4+ years active Linux user.</li>
+<li>«Works on my machine» is the worst excuse</li>
+<li>FOSS lover</li>
+</ul>
+<dl>
+<dt>Human Languages</dt>
+<dd><ul>
+<li>Russian (native speaker)</li>
+<li>English (Advanced C1)</li>
+</ul>
+</dd>
+<dt>Publications</dt>
+<dd><ul>
+<li>Arsenii Zorin, &amp; Nikolay Abramov. Disguised Face Detection. Springer Singapore, 2019</li>
+<li>A. Zorin and V.Itsykson Recurrent Neural Network for Code Clone Detection. SEIM-2018, St.-Petersburg, 2018</li>
+</ul>
+</dd>
+<dt>Topics to invest in</dt>
+<dd><ul>
+<li>Gitlab Auto DevOps</li>
+<li>GitHub Actions</li>
+<li>AWS</li>
+<li>Knative</li>
+<li>Terraform</li>
+</ul>
+</dd>
+</dl>
+</body>
+</html>
