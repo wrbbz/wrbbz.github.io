@@ -17,7 +17,7 @@ jobs:
           persist-credentials: false
 
       - name: Dependencies
-        uses: ./.github/actions/dependency
+        uses: ./.github/actions/dependencies
 
       - name: Builds pdf
         run: make pdf
