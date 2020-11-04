@@ -20,7 +20,16 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: Ender-events/pandoc@v1
+      - name: Installs pandoc
+        run: |
+            sudo apt update 
+            sudo apt install --assume-yes build-essential wget context
+            wget https://github.com/jgm/pandoc/releases/download/2.11.1/pandoc-2.11.1-1-amd64.deb
+            sudo apt install ./pandoc-2.11.1-1-amd64.deb
+            rm pandoc-2.11.1-1-amd64.deb
+            sudo apt remove --assume-yes wget
+            sudo apt autoclean
+            sudo apt clean
 
       # Runs a single command using the runners shell
       - name: Installs make 
@@ -29,7 +38,7 @@ jobs:
             sudo apt install --assume-yes make
 
       - name: Debug info
-        run: ls -la
+        run: pwd
 
       - name: Builds pdf
         run: make pdf
