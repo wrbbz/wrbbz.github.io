@@ -83,7 +83,9 @@ jobs:
         uses: ./.github/actions/dependencies
 
       - name: Builds html
-        run: make html
+        run: |
+          make html
+          cp output/resume.html output/index.html
 
       - name: Uploads artifact
         uses: actions/upload-artifact@v2
