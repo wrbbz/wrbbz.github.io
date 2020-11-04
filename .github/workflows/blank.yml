@@ -49,5 +49,9 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: resume-different-formats
-          path: output/resume.pdf
+          path: |
+            output/resume.pdf
+            output/resume.docx
+            output/resume.rtf
+            output/resume.html
         
