@@ -28,34 +28,65 @@ jobs:
           name: pdf-resume
           path: output/resume.pdf
 
-# 
-#   build:
-#     runs-on: ubuntu-latest
-# 
-#     steps:
-#       - name: Builds pdf
-#         run: make pdf
-#       
-#       - name: Builds docx
-#         run: make docx
-#     
-#       - name: Builds rtf
-#         run: make rtf
-#       
-#       - name: Builds html
-#         run: make html
-# 
-#   artifacts:
-#     runs-on: ubuntu-latest
-# 
-#     steps:
-#       - name: Forms artifacts
-#         uses: actions/upload-artifact@v2
-#         with:
-#           name: resume-different-formats
-#           path: |
-#             output/resume.pdf
-#             output/resume.docx
-#             output/resume.rtf
-#             output/resume.html
-#         
+  docx:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+
+      - name: Dependencies
+        uses: ./.github/actions/dependencies
+
+      - name: Builds docx
+        run: make docx
+
+      - name: Uploads artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: docx-resume
+          path: output/resume.docx
+
+  rtf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+
+      - name: Dependencies
+        uses: ./.github/actions/dependencies
+
+      - name: Builds rtf
+        run: make rtf
+
+      - name: Uploads artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: rtf-resume
+          path: output/resume.rtf
+
+  html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+
+      - name: Dependencies
+        uses: ./.github/actions/dependencies
+
+      - name: Builds html
+        run: make html
+
+      - name: Uploads artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: html-resume
+          path: output/resume.html
