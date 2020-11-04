@@ -34,28 +34,15 @@ jobs:
             sudo apt install --assume-yes make
 
       - name: Builds pdf
-        uses: actions/upload-artifact@v2
         run: make pdf
-        with:
-          name: cv.pdf
-          path: output/resume.pdf
       
       - name: Builds docx
-        uses: actions/upload-artifact@v2
         run: make docx
-        with:
-          name: cv.docx
-          path: output/resume.docx
     
       - name: Builds rtf
-        uses: actions/upload-artifact@v2
         run: make rtf
-        with:
-          name: cv.rtf
-          path: output/resume.rtf
       
       - name: Builds html
-        uses: actions/upload-artifact@v2
         run: make html
 
       - name: Forms artifacts
