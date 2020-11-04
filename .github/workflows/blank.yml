@@ -28,6 +28,9 @@ jobs:
             sudo apt update
             sudo apt install --assume-yes make
 
+      - name: Debug info
+        run: ls -la
+
       - name: Builds pdf
         run: make pdf
       
