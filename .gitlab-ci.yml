@@ -56,11 +56,10 @@ pages:
   stage: deploy
   image: alpine:latest
   script:
-    - mkdir public
-    - mv output/resume.html public/
+    - mv output/resume.html output/index.html
   artifacts:
     paths:
-      - public
+      - output
   only:
     - master
 
