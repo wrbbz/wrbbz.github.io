@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  deps:
+  build:pdf:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,44 +16,46 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Installs pandoc
-        run: |
-            sudo apt update 
-            sudo apt install --assume-yes build-essential wget context
-            wget https://github.com/jgm/pandoc/releases/download/2.11.1/pandoc-2.11.1-1-amd64.deb
-            sudo apt install ./pandoc-2.11.1-1-amd64.deb
-            rm pandoc-2.11.1-1-amd64.deb
-            sudo apt remove --assume-yes wget
-            sudo apt autoclean
-            sudo apt clean
+      - name: Dependencies
+        uses: ../actions/dependency.yaml
 
-      # Runs a single command using the runners shell
-      - name: Installs make 
-        run: |
-            sudo apt update
-            sudo apt install --assume-yes make
-
-  build:
       - name: Builds pdf
         run: make pdf
-      
-      - name: Builds docx
-        run: make docx
-    
-      - name: Builds rtf
-        run: make rtf
-      
-      - name: Builds html
-        run: make html
 
-  artifacts:
-      - name: Forms artifacts
+      - name: Uploads artifact
         uses: actions/upload-artifact@v2
         with:
-          name: resume-different-formats
-          path: |
-            output/resume.pdf
-            output/resume.docx
-            output/resume.rtf
-            output/resume.html
-        
+          name: pdf-resume
+          path: output/resume.pdf
+
+# 
+#   build:
+#     runs-on: ubuntu-latest
+# 
+#     steps:
+#       - name: Builds pdf
+#         run: make pdf
+#       
+#       - name: Builds docx
+#         run: make docx
+#     
+#       - name: Builds rtf
+#         run: make rtf
+#       
+#       - name: Builds html
+#         run: make html
+# 
+#   artifacts:
+#     runs-on: ubuntu-latest
+# 
+#     steps:
+#       - name: Forms artifacts
+#         uses: actions/upload-artifact@v2
+#         with:
+#           name: resume-different-formats
+#           path: |
+#             output/resume.pdf
+#             output/resume.docx
+#             output/resume.rtf
+#             output/resume.html
+#         

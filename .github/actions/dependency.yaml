@@ -1,0 +1,23 @@
+name: Dependency
+
+jobs:
+  deps:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Updates repositories and installs packages
+        run: |
+          sudo apt update
+          sudo apt install --assume-yes build-essential wget context
+
+      - name: Downloads and installs pandoc
+        run: |
+          wget https://github.com/jgm/pandoc/releases/download/2.11.1/pandoc-2.11.1-1-amd64.deb
+          sudo apt install ./pandoc-2.11.1-1-amd64.deb
+          rm pandoc-2.11.1-1-amd64.deb
+
+      - name: Cleans system
+        run: |
+          sudo apt remove --assume-yes wget
+          sudo apt autoclean
+          sudo apt clean
