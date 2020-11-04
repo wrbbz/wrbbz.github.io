@@ -8,8 +8,8 @@ Arsenii Zorin
 > Believe that DevOps is more than tools nevertheless tools are crucial.\
 > <zorinarseny@yandex.ru> • +7 (921)577 33 26 • 25 years old\
 > St.-Petersburg, Russia\
-> [GitLab](https://gitlab.com/rabbitaz) • [GitHub](https://github.com/wrabbitaz)\
-> [PDF version](https://gitlab.com/rabbitaz/cv/-/jobs/artifacts/master/download?job=pdf)
+> [GitLab](https://gitlab.com/wrbbz) • [GitHub](https://github.com/wrbbz)\
+> [PDF version](https://gitlab.com/wrbbz/cv/-/jobs/artifacts/master/download?job=pdf)
 
 ----
 
