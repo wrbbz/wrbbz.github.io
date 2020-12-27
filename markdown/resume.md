@@ -51,18 +51,22 @@ Experience
 		* Swift, Flutter
 	* deployed as binaries, datasets(ML stuff), packages(tar.xz, deb, rpm, Helm), 
 	running services (deployed to production/development)
+* GitHub actions for automatization of build and deploy stages
 * Creation of Helm packages for tens of projects
 * Creation of Buildroot package
+* Creation of snap packages
 * Buildroot for embedded Linux systems generation
 * Docker-compose for local development deployments (even with unix socket connections)
 * Minikube, kind for local development deployments
 * Nexus as package storage
 * HashiCorp Vault as secret storage
-* NGINX as a reverse proxy for every on-premises web service
+* NGINX as reverse proxy for every on-premises web service
 * Prometheus as monitoring tool
 * EFK and Loki as logging tool
-* nspawn as a tool for containerizing some services
+* nspawn as tool for containerizing some services
 * CMake project cross-platform build
+* Pulumi for managing clouds (DO and AWS)
+* Packer for creating machine images
 
 **[Scientific Laboratory "Program Verification and Analysis"](https://research.jetbrains.org/ru/groups/pvalab) [Jan 2017 - Jun 2018]**
 
@@ -136,9 +140,19 @@ Due to a negative amount of available time, the project died a horrible death.
 
 Open Source contribution
 :   * [Frost](https://github.com/dkanada/frost) Android Icon pack. Just for fun
-	* [zmNinja](https://github.com/wrabbitaz/zmNinja/tree/double_def_fix) cross platform app for ZoneMinder
+	* [zmNinja](https://github.com/wrabbitaz/zmNinja/tree/double_def_fix) cross 
+		platform app for ZoneMinder
 	* [minikube](https://github.com/kubernetes/minikube) Local Kubernetes
-	* [Kaniko](https://github.com/GoogleContainerTools/kaniko) Allows to build container images wo docker service
+	* [kind](https://github.com/kubernetes-sigs/kind) Kubernetes IN Docker - 
+		local clusters for testing Kubernetes 
+	* [Kaniko](https://github.com/GoogleContainerTools/kaniko) Allows to build 
+		container images wo docker service
+	* [tizonia](https://github.com/tizonia/tizonia-openmax-il) 
+	* [Pulumi. Digital Ocean provider](https://github.com/pulumi/pulumi-digitalocean) 
+		A Digital Ocean Pulumi resource package, providing multi-language access to Digital Ocean 
+	* [Packer tempaltes](https://github.com/ruzickap/packer-templates) Scripts 
+		and Templates used for generating Vagrant images
+
 
 About me
 ----------------------------------------
@@ -152,14 +166,14 @@ Human Languages
      * English (Advanced C1)
 
 Publications
-:	* Arsenii Zorin, & Nikolay Abramov. Disguised Face Detection. Springer 
-	Singapore, 2019
-	* A. Zorin and V.Itsykson Recurrent Neural Network for Code Clone Detection.
-	SEIM-2018, St.-Petersburg, 2018
+:	* A. Zorin, D. Chernyuk, O. Vlasova, M. Bolsunovskaya, I. Bezprozvanny
+		"Software for analyzing the behavioural test morris Water Maze".
+		E3S Web of Conferences, 2020
+ 	* A. Zorin, N. Abramov "Disguised Face Detection". Springer 
+		Singapore, 2019
+	* A. Zorin and V.Itsykson "Recurrent Neural Network for Code Clone 
+		Detection". SEIM-2018, St.-Petersburg, 2018
 
 Topics to invest in
 :	* Gitlab Auto DevOps
-	* GitHub Actions
-	* AWS
 	* Knative
-	* Terraform
