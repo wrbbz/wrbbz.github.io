@@ -139,19 +139,23 @@ Due to a negative amount of available time, the project died a horrible death.
 	* Hosted Archlinux repository to push updates
 
 Open Source contribution
-:   * [Frost](https://github.com/dkanada/frost) Android Icon pack. Just for fun
+:   * [Frost](https://github.com/dkanada/frost) Android Icon pack. Just for fun;
 	* [zmNinja](https://github.com/wrabbitaz/zmNinja/tree/double_def_fix) cross 
-		platform app for ZoneMinder
-	* [minikube](https://github.com/kubernetes/minikube) Local Kubernetes
+		platform app for ZoneMinder;
+	* [minikube](https://github.com/kubernetes/minikube) Local Kubernetes;
 	* [kind](https://github.com/kubernetes-sigs/kind) Kubernetes IN Docker - 
-		local clusters for testing Kubernetes 
+		local clusters for testing Kubernetes;
 	* [Kaniko](https://github.com/GoogleContainerTools/kaniko) Allows to build 
-		container images wo docker service
-	* [tizonia](https://github.com/tizonia/tizonia-openmax-il) 
+		container images wo docker service;
+	* [tizonia](https://github.com/tizonia/tizonia-openmax-il) Command-line 
+		cloud music player for Linux with support for Spotify, Google Play 
+		Music, YouTube, SoundCloud, TuneIn, iHeartRadio, Plex servers and
+		Chromecast devices;
 	* [Pulumi. Digital Ocean provider](https://github.com/pulumi/pulumi-digitalocean) 
-		A Digital Ocean Pulumi resource package, providing multi-language access to Digital Ocean 
+		A Digital Ocean Pulumi resource package, providing multi-language 
+		access to Digital Ocean;
 	* [Packer tempaltes](https://github.com/ruzickap/packer-templates) Scripts 
-		and Templates used for generating Vagrant images
+		and Templates used for generating Vagrant images;
 
 
 About me
