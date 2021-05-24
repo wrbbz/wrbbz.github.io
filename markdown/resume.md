@@ -42,11 +42,12 @@ Experience
 * On-premises deployment and maintenance of Sonatype Nexus (Helm)
 * On-premises deployment and maintenance of Zulip (Helm)
 * On-premises deployment and maintenance of HashiCorp Vault (Helm)
+* On-premises deployment and maintenance of SonarQube (Helm)
 * Routine automation with Gitlab CI/CD, self-written stuff
 * Fleet of Gitlab Runners of all sorts (Docker on Linux, Windows, MacOS, Kubernetes)
 * Creation of CI/CD pipeline for tens of projects
 	* Desktop and Web projects:
-		* Java, C, C++, Rust, Go, JS, HTML, CSS
+		* Java, C, C++, C#, Rust, Go, JS, HTML, CSS
 	* Mobile projects:
 		* Swift, Flutter
 	* deployed as binaries, datasets(ML stuff), packages(tar.xz, deb, rpm, Helm), 
@@ -66,7 +67,9 @@ Experience
 * nspawn as tool for containerizing some services
 * CMake project cross-platform build
 * Pulumi for managing clouds (DO and AWS)
+* Pulumi instead of Helm Chart
 * Packer for creating machine images
+* Pacur for creating packages for ubuntu distribution 
 
 **[Scientific Laboratory "Program Verification and Analysis"](https://research.jetbrains.org/ru/groups/pvalab) [Jan 2017 - Jun 2018]**
 
@@ -85,7 +88,7 @@ Not DevOps activities
 	* Network Management:
 		* Linux routers/boxes
 			* IPTables
-			* uwf (user boxes)
+			* ufw (user boxes)
 			* dhcpd
 			* netplan
 			* NetwrokManager
@@ -100,6 +103,8 @@ Not DevOps activities
 Development activities
 :	Common frameworks/libs:
 
+	* Diesel
+	* Gotham
 	* darknet
 	* OpenCV
 	* TensorFlow
@@ -163,14 +168,26 @@ About me
 
 * 4+ years active Linux user.
 * «Works on my machine» is the worst excuse
+* «It depends»
 * FOSS lover
 
 Human Languages
 :	 * Russian (native speaker)
      * English (Advanced C1)
 
+Sport Life
+:	 * Snowboarding as an extreme sport (university team)
+	 * Volleyball as a team sport (school team)
+	 * Archery as a sport for the soul ([Black badge](https://worldarchery.sport/rulebook/article/17)/
+		Candidate for Master of Sports)
+
+
 Publications
-:	* A. Zorin, D. Chernyuk, O. Vlasova, M. Bolsunovskaya, I. Bezprozvanny
+:	* Chernyuk, D. P., Zorin, A. G., Derevtsova, K. Z., Efimova, E. V., 
+		Prikhodko, V. A., Sysoev, Y. I., . . . Bezprozvanny, I. B. (2021). 
+		Automatic analysis of the "morris water maze" behavioral test data. 
+		Zhurnal Vysshei Nervnoi Deyatelnosti Imeni I.P.Pavlova, 71(1), 126-135.
+	* A. Zorin, D. Chernyuk, O. Vlasova, M. Bolsunovskaya, I. Bezprozvanny
 		"Software for analyzing the behavioural test morris Water Maze".
 		E3S Web of Conferences, 2020
  	* A. Zorin, N. Abramov "Disguised Face Detection". Springer 
