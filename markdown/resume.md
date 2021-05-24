@@ -37,7 +37,7 @@ Education
 Experience
 ----------
 
-**[Peter the Great St. Petersburg Polytechnic University](https://spbpu.com) [Feb 2018 - Current]:**
+**[R&D department in Peter the Great St. Petersburg Polytechnic University](https://spbpu.com) [Feb 2018 - Current]:**
 
 * On-premises deployment and maintenance:
 	* Gitlab (Omnibus, Helm)
