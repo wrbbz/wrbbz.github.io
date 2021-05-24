@@ -18,19 +18,20 @@ Education
 
 2019-2023 (expected)
 :   **PhD, Mathematics and software of computers, network and complexes**; [Peter
-the Great St.Petersburg Polytechnic University](https://www.spbstu.ru/) (St. Petersburg)
+		the Great St.Petersburg Polytechnic University](https://www.spbstu.ru/) (St. Petersburg)
 
     *Thesis title: Semantic software clones detection in source code*
 
 2016-2018
 :   **MSc, Technology Development of Software**; [Peter the Great St.Petersburg
-Polytechnic University](https://www.spbstu.ru/) (St. Petersburg)
+		Polytechnic University](https://www.spbstu.ru/) (St. Petersburg)
 
     *Thesis title: Artificial neural networks usage for software clones 
 	detection in source code*
 
 2012-2016
-:   **BSc, Applied Mathematics and Computer Science**; [Saint-Petersburg State University of Architecture and Civil Engineering](https://www.spbgasu.ru/) (St.-Petersburg)
+:   **BSc, Applied Mathematics and Computer Science**; [Saint-Petersburg State University of
+		Architecture and Civil Engineering](https://www.spbgasu.ru/) (St.-Petersburg)
 
 
 Experience
@@ -38,11 +39,12 @@ Experience
 
 **[Peter the Great St. Petersburg Polytechnic University](https://spbpu.com) [Feb 2018 - Current]:**
 
-* On-premises deployment and maintenance of Gitlab (Omnibus, Helm)
-* On-premises deployment and maintenance of Sonatype Nexus (Helm)
-* On-premises deployment and maintenance of Zulip (Helm)
-* On-premises deployment and maintenance of HashiCorp Vault (Helm)
-* On-premises deployment and maintenance of SonarQube (Helm)
+* On-premises deployment and maintenance:
+	* Gitlab (Omnibus, Helm)
+	* Sonatype Nexus (Helm)
+	* Zulip (Helm)
+	* HashiCorp Vault (Helm)
+	* SonarQube (Helm)
 * Routine automation with Gitlab CI/CD, self-written stuff
 * Fleet of Gitlab Runners of all sorts (Docker on Linux, Windows, MacOS, Kubernetes)
 * Creation of CI/CD pipeline for tens of projects
@@ -178,8 +180,8 @@ Human Languages
 Sport Life
 :	 * Snowboarding as an extreme sport (university team)
 	 * Volleyball as a team sport (school team)
-	 * Archery as a sport for the soul ([Black badge](https://worldarchery.sport/rulebook/article/17)/
-		Candidate for Master of Sports)
+	 * Archery as a sport for the soul 
+		([Black badge](https://worldarchery.sport/rulebook/article/17)/Candidate for Master of Sports)
 
 
 Publications
